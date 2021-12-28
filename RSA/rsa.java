@@ -19,7 +19,7 @@ public class rsa {
 
     //
     public static void main(String[] args){
-        RSA rsa = new RSA();
+        rsa rsa = new rsa();
 //        rsa.generateNewKeyPair();
 //        rsa.encodeTextFile();
         rsa.decodeTextFile();
@@ -182,7 +182,7 @@ public class rsa {
             }
             k = k.multiply(k).mod(m);
             i = i.subtract(BigInteger.ONE);
-        };
+        }
         return h;
     }
 
